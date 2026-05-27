@@ -53,6 +53,40 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+            <tr onmouseout="underwater_stop()" onmouseover="underwater_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <div class="two" id="underwater_geoloc_image" style="opacity:0;">
+                    <img src="images/geoloc.png" style="width:100%;height:100%;object-fit:cover;">
+                  </div>
+                  <video src="images/underwater_polarization.mov" style="width:100%;height:100%;object-fit:cover;" autoplay muted loop playsinline></video>
+                </div>
+                <script type="text/javascript">
+                  function underwater_start() {
+                    document.getElementById('underwater_geoloc_image').style.opacity = "1";
+                  }
+
+                  function underwater_stop() {
+                    document.getElementById('underwater_geoloc_image').style.opacity = "0";
+                  }
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top">
+                <span class="papertitle">Global Underwater Geolocation from Time-Lapse Polarization Imagery</span>
+                <br>
+                <strong>Sara Aghajanzadeh</strong>, Xiaoyang Bai, Zhongmin Zhu, 
+                <a href="https://biosensors.web.engr.illinois.edu/team-members-2/">Viktor Gruev</a>,
+                <a href="http://luthuli.cs.uiuc.edu/~daf/">David Forsyth</a>
+                <br>
+                <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition</em>, 2026
+                <br>
+                <a href="https://youtu.be/H0ISjiPYR8w" target="_blank" rel="noopener noreferrer">video</a> /
+                <a href="data/underwater_geo_poster.pdf" target="_blank" rel="noopener noreferrer">poster</a> /
+                <a href="https://github.com/SaraAghajanzadeh/Underwater_Polarization_Geolocalization" target="_blank" rel="noopener noreferrer">code</a>
+                <br>
+              </td>
+            </tr>
+
             <tr>
               <td style="padding:20px;width:25%;vertical-align:top">
                 <img src="images/llie_zsdp.png" alt="qualitative_result" width="160" height="160">
@@ -64,7 +98,11 @@
                 <br> 
                 <a href="https://github.com/hello-world-from-joshua">Joshua Cho</a>, <strong>Sara Aghajanzadeh</strong>,  <a href="https://zzhu.vision/">Zhen Zhu</a>, <a href="http://luthuli.cs.uiuc.edu/~daf/">David Forsyth</a>
                 <br>
-                <em> Arxiv</em>, December 2024
+                <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition</em>, 2026
+                <br>
+                <a href="https://www.youtube.com/watch?v=UXJ920uQJwM" target="_blank" rel="noopener noreferrer">video</a> /
+                <a href="data/mr-illuminate-poster.pdf" target="_blank" rel="noopener noreferrer">poster</a> /
+                <a href="https://github.com/hello-world-from-joshua/Zero-Shot-LLIE" target="_blank" rel="noopener noreferrer">code</a>
                 <br>
                 </p>
               </td>
@@ -189,6 +227,8 @@
                 <strong>Sara Aghajanzadeh</strong>, Roopasree Naidu, Shuo-Han Chen, Caleb Tung, Abhinav Goel, George Thiruvathukal, Yung-Hsiang Lu
                 <br>
                 <em>IEEE International Conference on Image Processing</em>, 2020
+                <br>
+                <a href="https://github.com/SaraAghajanzadeh/poly-split" target="_blank" rel="noopener noreferrer">code</a>
                 <br>
               </td>
             </tr>
