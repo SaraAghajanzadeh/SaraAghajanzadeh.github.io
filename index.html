@@ -51,7 +51,38 @@
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table id="publications" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr onmouseout="underwater_reconstruction_stop()" onmouseover="underwater_reconstruction_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one" style="height:232px;">
+                  <div class="two" id="underwater_reconstruction_image" style="height:232px;">
+                    <img src="images/clear_recon_after.png" alt="Clear underwater reconstruction" style="width:100%;height:auto;display:block;">
+                  </div>
+                  <img src="images/uw_input_before.png" alt="Underwater input" style="width:100%;height:auto;display:block;">
+                </div>
+                <script type="text/javascript">
+                  function underwater_reconstruction_start() {
+                    document.getElementById('underwater_reconstruction_image').style.opacity = "1";
+                  }
+
+                  function underwater_reconstruction_stop() {
+                    document.getElementById('underwater_reconstruction_image').style.opacity = "0";
+                  }
+                  underwater_reconstruction_stop();
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top">
+                <a href="https://arxiv.org/abs/2608.11425">
+                  <span class="papertitle">VLMs Win a Systematic Evaluation of Underwater Image Reconstruction</span>
+                </a>
+                <br>
+                <strong>S. Aghajanzadeh</strong>, Y. Wang, I. Bagdonaviciute, D. Forsyth
+                <br>
+                <em>Under Review</em>
+                <br>
+              </td>
+            </tr>
 
             <tr onmouseout="underwater_stop()" onmouseover="underwater_start()">
               <td style="padding:20px;width:25%;vertical-align:top">
@@ -72,7 +103,9 @@
                 </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:top">
-                <span class="papertitle">Global Underwater Geolocation from Time-Lapse Polarization Imagery</span>
+                <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Aghajanzadeh_Global_Underwater_Geolocation_from_Time-Lapse_Polarization_Imagery_CVPR_2026_paper.pdf">
+                  <span class="papertitle">Global Underwater Geolocation from Time-Lapse Polarization Imagery</span>
+                </a>
                 <br>
                 <strong>Sara Aghajanzadeh</strong>, Xiaoyang Bai, Zhongmin Zhu, 
                 <a href="https://biosensors.web.engr.illinois.edu/team-members-2/">Viktor Gruev</a>,
@@ -287,6 +320,12 @@
             </tr>
 
           </tbody></table>
+          <script type="text/javascript">
+            document.querySelectorAll('#publications a').forEach(function(link) {
+              link.target = '_blank';
+              link.rel = 'noopener noreferrer';
+            });
+          </script>
 
           
 
